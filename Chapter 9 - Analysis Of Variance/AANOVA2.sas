@@ -27,8 +27,8 @@ ODS HTML;
 	PROC ANOVA 
 		DATA = ACHE;
 	    CLASS BRAND; /*Grouping Variable - Categorical Variable*/ 
-	    MODEL RELIEF = BRAND;
-	    MEANS BRAND
+	    MODEL RELIEF /*dependent variable*/ = BRAND /*independent variable*/;
+	    MEANS BRAND	 /*independent variable*/
 	    			/ TUKEY 
 	    			  CLDIFF;
 		TITLE 'COMPARE RELIEF ACROSS MEDICINES  - ANOVA EXAMPLE';
