@@ -19,8 +19,8 @@ ODS HTML FILE = "/home/u64459399/Past Practical Test Semester 2/Test 4 - 4 to12 
     	STYLE = MEADOW;
 	PROC TRANSPOSE
 	    DATA = SCHOOL
-	    OUT = NEW
-	    PREFIX = X;
+				    OUT = NEW
+				    PREFIX = X;
 	RUN;
 	
 	PROC PRINT 
